@@ -30,8 +30,17 @@ const peeps = [
 ];
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 ***********************************************************************/
-
-
-function countScores(people) {
-
+const countScores = people => {
+  let obj = {};
+  people.forEach(person => {
+    let nameProperty = [...Object.values(person)][0];
+    let scoreProperty = [...Object.values(person)][1];
+    if (nameProperty in obj){
+      obj[nameProperty] += scoreProperty;
+    }else {
+      obj[nameProperty] = scoreProperty;
+    }
+  })
+  return obj;
 }
+

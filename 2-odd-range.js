@@ -7,7 +7,12 @@ Examples:
 oddRange(13); // => [ 1, 3, 5, 7, 9, 11, 13 ]
 oddRange(6); // => [ 1, 3, 5 ]
 ******************************************************************************/
-
-function oddRange(end) {
-
+const oddRange = end => {
+    let rangeArray = [];
+    for(let i = 1; i <= end; i++ ){
+        if(i % 2 === 1){
+            rangeArray = [...rangeArray, i];
+        }
+    }
+    return rangeArray;
 }
