@@ -16,6 +16,7 @@ adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
 ***********************************************************************/
 
 function adults(people) {
+  //Create a list of objects who's age property is >17 then convert the object array to a name array.
   return people.filter((person) => person.age > 17).map((person) => person.name)
 }
 
