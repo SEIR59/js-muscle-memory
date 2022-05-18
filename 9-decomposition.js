@@ -19,9 +19,18 @@ isPrime(303212); // => false
 ***********************************************************************/
 
 function isPrime(number) {
-    
+
+    //check if the number is divisible by 2. Apparently I can't use 'return' in this format.
+    let checker = (number % 2 === 0 ? true : false)
+    //if it's even, it's definitely not prime.
+    if (checker){return false}
+
+    //make a list of odd numbers between 3 and number-1/2
+    let oddArr = Array.from(Array(Math.floor((number - 2) / 2)).keys()).map((x) => x + 2).filter((x) => x%2 == 1)
+    //if one of those numbers has mod 0, it is not prime
+    return (oddArr.map((x) => number%x).includes(0) == false)
 }
-  
+console.log(isPrime(19))
 /***********************************************************************
 Using the `isPrime` function you made, write a function `firstNPrimes(n)`
 that returns an array of the first `n` prime numbers.
@@ -34,8 +43,15 @@ firstNPrimes(4); // => [2, 3, 5, 7]
 ***********************************************************************/
 
 function firstNPrimes(n) {
-
+    const nPrimes = []
+    let j = 3
+    while (nPrimes.length<n){
+        isPrime(j)? nPrimes.push(j) : false
+        j++
+    }
+    return nPrimes
 }
+console.log(firstNPrimes(5))
 
 /***********************************************************************
  Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
@@ -49,5 +65,6 @@ sumOfNPrimes(4); // => 17
 ***********************************************************************/
 
 function sumOfNPrimes(n) {
-
+    return firstNPrimes(n).reduce((x,y)=>x+y)
 }
+console.log(sumOfNPrimes(5))

@@ -9,5 +9,6 @@ oddRange(6); // => [ 1, 3, 5 ]
 ******************************************************************************/
 
 function oddRange(end) {
-
+    return Array.from(Array(end).keys()).map((x)=> x+1).filter((x)=> x%2 === 1)
 }
+console.log(oddRange(30))
