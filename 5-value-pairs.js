@@ -5,13 +5,20 @@ corresponding values of the objects for the given key.
 
 Examples:
 
-const object1 = {name: 'One', location: 'Remote', age: 1};
-const object2 = {name: 'Two', location: 'San Francisco'};
+
 
 valuePair(object1, object2, 'location'); // => [ 'Remote', 'San Francisco' ]
 valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 ***********************************************************************/
 
-function valuePair(obj1, obj2, key) {
+const object1 = {name: 'One', location: 'Remote', age: 1};
+const object2 = {name: 'Two', location: 'San Francisco'};
+console.log(object1.location)
 
+function valuePair(obj1, obj2, key) {
+    const answerArr = []
+    answerArr.push(obj1.key)
+    answerArr.push(obj2.key)
+    return answerArr
 }
+console.log(valuePair(object1, object2, 'location'))
