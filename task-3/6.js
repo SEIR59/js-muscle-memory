@@ -1,5 +1,5 @@
 // 6
-let str = 'pizza'; // try different strings here
+let str = 'plellybobelly'; // try different strings here
 if (str.length > 10) {
   console.log('long string');
 } else {

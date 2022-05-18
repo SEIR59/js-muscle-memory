@@ -1,5 +1,5 @@
 // 10
-let num = -44; // try different numbers here
+let num = -(-32); // try different numbers here
 if (num > 0) {
   console.log('positive');
 } else if (num < 0) {
