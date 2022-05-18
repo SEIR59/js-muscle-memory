@@ -9,5 +9,16 @@ oddRange(6); // => [ 1, 3, 5 ]
 ******************************************************************************/
 
 function oddRange(end) {
+    // Create an empty array to store values
+    let oddArray = []
 
+    // For each number from 1 to end
+    for (i = 0; i <= end; i++){
+
+        // If the number is odd, push the value into oddArray
+        if (i % 2 === 1) oddArray.push(i)
+    }
+    // Return oddArray
+    return oddArray
 }
+
