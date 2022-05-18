@@ -30,35 +30,14 @@ const peeps = [
 ];
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 ***********************************************************************/
-
-
 function countScores(people) {
-  //make a list for people to go into, where their scores will be added
-  let solutionArray = []
-  //work through list of people objects
-  for (let person of people) {
-    //find the index for them in the solution array. Could probably use some other method here, not sure.
-    let index = solutionArray.map((x) => x.name).indexOf(person.name)
-    //if index doesnt exist, meaning their name doesnt exist in the solution array yet
-    if (index === -1) {
-      //add them
-      solutionArray.push(person)
-      //if they are in the array
-    } else {
-      //add that new score to their current score
-      solutionArray[index].score += person.score
-    }
+  let tracker = {}
+  for (let person of people){
+    let name = person.name
+    name in tracker ? tracker[name]+= person.score : tracker[name] = person.score
   }
-  //return the list of people with their scores added
-  return solutionArray
-
+  return tracker
 }
-//  people.forEach((person) => solutionArray.map((result)=> result.name === person.name ? (result.score += person.score) : solutionArray.push(person)))
-
-/* return people.map((person) => 
-people.filter(people[person]).reduce((x,y)=> 
-x.score+=y.score )) */
-
 
 const ppl = [
   { name: "Pete", score: 10 },
@@ -66,5 +45,4 @@ const ppl = [
   { name: "Pete", score: -8 },
   { name: "Dexter", score: 12 }
 ];
-
 console.log(countScores(ppl))
