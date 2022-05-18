@@ -7,7 +7,13 @@ Examples:
 tripler([1,2,3]); // => [ 3, 6, 9 ]
 tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
+const arr= [2,24,56];
 
-function tripler(array) {
+const tripler = arr.map (function trip(array) {
+return array * 3;
+
+});
+
+console.log(tripler);
+
   
-}

@@ -12,6 +12,13 @@ isPrime(2017); // => true
 ***************************************************************************/
 
 function isPrime(number) {
+if( number >3 && number % 3===0 ||number >3 && number % 2===0){
+    return false;
+
+} else{
+    return true;
+}
 
 }
+console.log(isPrime(9));
 
