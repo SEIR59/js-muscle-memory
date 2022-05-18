@@ -53,6 +53,7 @@ firstNPrimes(4); // => [2, 3, 5, 7]
 function firstNPrimes(n) {
     const nPrimes = []
     for (let i = 1; i < Infinity; i++) {
+        // The global property Infinity is a numeric value representing infinity. - MDN
         if (nPrimes.length === n) {
             break
         }
