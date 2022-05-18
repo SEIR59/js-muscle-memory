@@ -7,7 +7,13 @@ Examples:
 tripler([1,2,3]); // => [ 3, 6, 9 ]
 tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
-
 function tripler(array) {
-  
+    let timesThree = [];
+    for(let i = 0; i < array.length; i++){
+        timesThree[i] = array[i] * 3;
+    }
+    console.log(timesThree);
+    return timesThree;
 }
+tripler([1,2,3]);
+tripler([4, 1, 7]);
