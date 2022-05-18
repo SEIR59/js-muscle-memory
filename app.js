@@ -70,10 +70,7 @@ function addExercisesToContainer(array) {
 addExercisesToContainer(exercises); */
 
 // 2
-let str1 = 'marker';
-let num = 'whiteboard'.length - str1.length;
-console.log(num); // 4
-let str2 = 'bootcamp';
-console.log(str2[num].toUpperCase()); // C
-let char = str2[num].toLowerCase(); // no output, just assigns variable c
-console.log(char + '!'); // c!
+let sentence = 'welcome to bootcamp prep';
+let lastChar = sentence[sentence.length - 1];
+console.log(lastChar); // p
+console.log(sentence.indexOf(lastChar)); // the number that is sentence.length - 1

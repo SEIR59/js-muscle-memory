@@ -74,8 +74,8 @@ console.log(char + '!'); // c!
 // 4
 let sentence = 'welcome to bootcamp prep';
 let lastChar = sentence[sentence.length - 1];
-console.log(lastChar); // ?
-console.log(sentence.indexOf(lastChar)); // ?
+console.log(lastChar); // p
+console.log(sentence.indexOf(lastChar)); // the number that is sentence.length - 1
 ```
 ### Task 3: Conditionals
 Predict what will happen in the following examples. Which `console.log`s will actually
@@ -89,7 +89,7 @@ let age = 30; // try different numbers here
 if (age > 30) {
   console.log('older than 30');
 } else {
-  console.log('younger than 30');
+  console.log('younger than 30');//this one
 }
 ```
 ```js
@@ -98,36 +98,36 @@ let str = 'pizza'; // try different strings here
 if (str.length > 10) {
   console.log('long string');
 } else {
-  console.log('short string');
+  console.log('short string');//this one
 }
 if (str[0] === 'p') {
-  console.log('starts with p');
+  console.log('starts with p');//this one
 }
 ```
 ```js
 // 7
 let num = 15; // try different numbers here
 if (num % 3 === 0) {
-  console.log('divisible by 3');
+  console.log('divisible by 3');//this one
 } else if (num % 5 === 0) {
-  console.log('divisible by 5');
+  console.log('divisible by 5'); //not this one.Bumped bc of first if statement
 }
 ```
 ```js
 // 8
 let num = 15; // try different numbers here
 if (num % 3 === 0) {
-  console.log('divisible by 3');
+  console.log('divisible by 3');//this one
 }
 if (num % 5 === 0) {
-  console.log('divisible by 5');
+  console.log('divisible by 5');//this one
 }
 ```
 ```js
 // 9
 let str = 'General Assembly'; // try different strings here
 if (str[0] === str[0].toUpperCase()) {
-  console.log('starts with a capital!');
+  console.log('starts with a capital!');//this one
 }
 if (str[str.length - 1] === str[str.length - 1].toUpperCase()) {
   console.log('ends with a capital!');
@@ -139,12 +139,12 @@ let num = -44; // try different numbers here
 if (num > 0) {
   console.log('positive');
 } else if (num < 0) {
-  console.log('negative');
+  console.log('negative');//this one
 } else {
   console.log(0);
 }
 if (num % 2 === 0) {
-  console.log('even');
+  console.log('even');//this one
 } else {
   console.log('odd');
 }
