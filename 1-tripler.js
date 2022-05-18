@@ -9,5 +9,9 @@ tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
 
 function tripler(array) {
-  
+    const result = []
+    for (let i = 0; i < array.length; i++){
+        result.push(array[i] * 3)
+    }
+    return result
 }
