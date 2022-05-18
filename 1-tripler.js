@@ -8,6 +8,4 @@ tripler([1,2,3]); // => [ 3, 6, 9 ]
 tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
 
-function tripler(array) {
-  
-}
+const tripler = array => array.map(element => element * 3);
