@@ -116,3 +116,224 @@ class GameCharacter {
 
 const mario = new GameCharacter('Mario', 'red', 'jump');
 mario.pressA();
+
+  ////////////////////////////////////////
+ /////////     NEXT SECTION     /////////
+////////////////////////////////////////
+
+// let num = 9;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+// let num = 23;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+// let num = 31;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+// let num = -33;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+// let num = 912341;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+// let num = 90;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+// let num = -412;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+// let num = 9000;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+// let num = 9001;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+// let num = 9999999999;
+// if (num > 5) {
+//   console.log('if');
+// }
+
+////////////////
+
+
+// let num = 5; 
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 1;
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 0;
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 2828;
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = -80;
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 72;
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 110;
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = -32;
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 4;
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 6;
+// if (num > 5) {
+//   console.log('if');
+// } else {
+//   console.log('else');
+// }
+
+
+////////////////
+
+// let num = 1;
+// if (num < 0) {
+//   console.log('if');
+// } else if (num > 0) {
+//   console.log('else if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 6;
+// if (num < 0) {
+//   console.log('if');
+// } else if (num > 0) {
+//   console.log('else if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = -2;
+// if (num < 0) {
+//   console.log('if');
+// } else if (num > 0) {
+//   console.log('else if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 0;
+// if (num < 0) {
+//   console.log('if');
+// } else if (num > 0) {
+//   console.log('else if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 98;
+// if (num < 0) {
+//   console.log('if');
+// } else if (num > 0) {
+//   console.log('else if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 47;
+// if (num < 0) {
+//   console.log('if');
+// } else if (num > 0) {
+//   console.log('else if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 2;
+// if (num < 0) {
+//   console.log('if');
+// } else if (num > 0) {
+//   console.log('else if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = 11;
+// if (num < 0) {
+//   console.log('if');
+// } else if (num > 0) {
+//   console.log('else if');
+// } else {
+//   console.log('else');
+// }
+
+// let num = -666;
+// if (num < 0) {
+//   console.log('if');
+// } else if (num > 0) {
+//   console.log('else if');
+// } else {
+//   console.log('else');
+// }
+
+let num = 1;
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+
