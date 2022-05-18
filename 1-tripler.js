@@ -9,10 +9,13 @@ tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
 const array = [1,2,3];
 
-// function tripler(array){
-// }
+function tripler(array){
+    let newArray = array.map((array) => {
+        return array * 3;
+    })
+}
 
-const tripler = array.map((array) => {
-    return array * 3;
-});
 console.log(tripler);
+// const tripler = array.map((array) => {
+//     return array * 3;
+// });
