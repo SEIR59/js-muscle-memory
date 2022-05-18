@@ -19,9 +19,23 @@ isPrime(303212); // => false
 ***********************************************************************/
 
 function isPrime(number) {
-    
+    if (number === 2) {
+        return true;
+    }
+    for (let i = 2; i < number; i++){
+        if (number  % i === 0 ) {
+            return false;
+        }
+    }
+    return true;
 }
-  
+
+// console.log(isPrime(2)); // => true
+// console.log(isPrime(1693)); // => true
+// console.log(isPrime(15)); // => false
+// console.log(isPrime(303212)); // => false
+
+
 /***********************************************************************
 Using the `isPrime` function you made, write a function `firstNPrimes(n)`
 that returns an array of the first `n` prime numbers.
@@ -34,9 +48,25 @@ firstNPrimes(4); // => [2, 3, 5, 7]
 ***********************************************************************/
 
 function firstNPrimes(n) {
-
+    // check to make sure the entry is a positive number.
+    if (isNaN(n) || n === null || n < 0) {
+        return console.log("Please enter a positive number!")
+    }
+    // return console.log("we made it!");
+    let arrPrimeNums = [];
+    let primeCount = 0;
+    let nums = 2;
+    while( primeCount < n) {
+        if(isPrime(nums)) {
+            arrPrimeNums.push(nums);
+            primeCount++;
+        }
+        nums++;
+    }
+    return arrPrimeNums;
 }
 
+// console.log(firstNPrimes(4));
 /***********************************************************************
  Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
 the sum of the first `n` prime numbers.
@@ -49,5 +79,12 @@ sumOfNPrimes(4); // => 17
 ***********************************************************************/
 
 function sumOfNPrimes(n) {
-
+    let arrPrimesToSum = firstNPrimes(n);
+    console.log(arrPrimesToSum);
+    let sumTotal = arrPrimesToSum.reduce((prev, cur) => {
+        return prev + cur;
+    })
+    return sumTotal;
 }
+
+console.log(sumOfNPrimes(1));
