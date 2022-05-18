@@ -49,33 +49,33 @@ reading for how to run `.js` files.
 // 1
 let idx = 'abcde'.indexOf('D');
 idx = idx + 11;
-console.log(idx); // ?
+console.log(idx); // 10
 idx * 2;
-console.log(idx); // ?
+console.log(idx); // 20
 ```
 ```js
 // 2
 let num = 33;
 let isEven = num % 2 === 0;
-console.log(isEven); // ?
-console.log(!isEven); // ?
+console.log(isEven); // false
+console.log(!isEven); // true
 ```
 ```js
 // 3
 let str1 = 'marker';
 let num = 'whiteboard'.length - str1.length;
-console.log(num); // ?
+console.log(num); // 4
 let str2 = 'bootcamp';
-console.log(str2[num].toUpperCase()); // ?
-let char = str2[num].toLowerCase(); // ?
-console.log(char + '!'); // ?
+console.log(str2[num].toUpperCase()); // C
+let char = str2[num].toLowerCase(); // c!
+console.log(char + '!'); // undefined
 ```
 ```js
 // 4
 let sentence = 'welcome to bootcamp prep';
 let lastChar = sentence[sentence.length - 1];
-console.log(lastChar); // ?
-console.log(sentence.indexOf(lastChar)); // ?
+console.log(lastChar); // p
+console.log(sentence.indexOf(lastChar)); // 18
 ```
 ### Task 3: Conditionals
 Predict what will happen in the following examples. Which `console.log`s will actually
@@ -85,7 +85,7 @@ After, feel free to play around with the variable (by assigning your own value)
 in each example to experiment!
 ```js
 // 5
-let age = 30; // try different numbers here
+let age = 38; // try different numbers here
 if (age > 30) {
   console.log('older than 30');
 } else {
@@ -94,7 +94,7 @@ if (age > 30) {
 ```
 ```js
 // 6
-let str = 'pizza'; // try different strings here
+let str = 'strawberyyyyyyyyy'; // try different strings here
 if (str.length > 10) {
   console.log('long string');
 } else {
@@ -106,7 +106,7 @@ if (str[0] === 'p') {
 ```
 ```js
 // 7
-let num = 15; // try different numbers here
+let num = 34; // try different numbers here
 if (num % 3 === 0) {
   console.log('divisible by 3');
 } else if (num % 5 === 0) {
@@ -115,7 +115,7 @@ if (num % 3 === 0) {
 ```
 ```js
 // 8
-let num = 15; // try different numbers here
+let num = 1556; // try different numbers here
 if (num % 3 === 0) {
   console.log('divisible by 3');
 }
@@ -125,7 +125,7 @@ if (num % 5 === 0) {
 ```
 ```js
 // 9
-let str = 'General Assembly'; // try different strings here
+let str = 'software engineering'; // try different strings here
 if (str[0] === str[0].toUpperCase()) {
   console.log('starts with a capital!');
 }
@@ -162,6 +162,48 @@ if (num > 5) {
   console.log('if');
 }
 ```
+let num = 11;
+if (num > 5) {
+  console.log('if');
+}
+let num = 11;
+if (num > 5) {
+  console.log('if')
+}
+let num = 11;
+if (num > 5) {
+  console.log('if')
+}
+let num = 11;
+if (num > 5) {
+  console.log('if')
+}
+let num = 11;
+if (num > 5) {
+  console.log('if')
+}
+let num = 11;
+if (num > 5) {
+  console.log('if')
+}
+let num = 11;
+if (num > 5) {
+  console.log('if')
+}
+let num = 11;
+if (num > 5) {
+  console.log('if')
+}
+let num = 11;
+if (num > 5) {
+  console.log('if')
+}
+let num = 11;
+if (num > 5) {
+  console.log('if')
+}
+
+
 ```js
 let num = 5; // feel free to change the value of this variable
 if (num > 5) {
@@ -170,6 +212,58 @@ if (num > 5) {
   console.log('else');
 }
 ```
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+if (num > 5) {
+  console.log('if');
+} else {
+  console.log('else');
+}
+
+
 ```js
 let num = 0; // feel free to change the value of this variable
 if (num < 0) {
@@ -180,7 +274,76 @@ if (num < 0) {
   console.log('else');
 }
 ```
-
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+if (num < 0) {
+  console.log('if');
+} else if (num > 0) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
 ### Task 5: Function Muscle Memory
 Practice typing the syntax for functions. **Type each snippet 10 times.** Focus on using
 proper style and indentation. Be sure to test your code by running it after
@@ -193,6 +356,16 @@ function sayHello(name) {
 }
 console.log(sayHello('bootcamp prep')); // feel free to change the string being passed
 ```
+function sayHello(name) {
+  let msg = 'hello, '+ name + '. How are you?';
+  return msg
+}
+function sayHello(name) {
+  let msg = 'hello, '+ name + '. How are you?';
+  return msg
+}
+function sayHello(name)
+
 ```js
 function checkNumber(num) {
   if (num > 0) {
