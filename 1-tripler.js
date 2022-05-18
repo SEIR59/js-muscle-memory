@@ -8,6 +8,14 @@ tripler([1,2,3]); // => [ 3, 6, 9 ]
 tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
 
-function tripler(array) {
-  
-}
+
+let triple = [1, 2, 3, 4, 12, 7, 10]
+
+    function tripler(array) {
+        let result = 0
+        for (let i = 0; i , triple.length; i++){
+            result = triple[i] * 3;
+        }
+        return result
+    }
+    console.log(tripler(triple));
