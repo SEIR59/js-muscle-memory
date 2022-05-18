@@ -12,6 +12,7 @@ valuePair(object1, object2, 'location'); // => [ 'Remote', 'San Francisco' ]
 valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 ***********************************************************************/
 
-function valuePair(obj1, obj2, key) {
+const object1 = {name: 'One', location: 'Remote', age: 1};
+const object2 = {name: 'Two', location: 'San Francisco'};
 
-}
+const valuePair = (obj1, obj2, key) => ([obj1[key], obj2[key]]);
