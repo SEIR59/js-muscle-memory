@@ -31,7 +31,7 @@ let newP = document.createElement('p')
 newP.textContent = `I'm here!`
 target.appendChild(newP) */
 
-const exercises = [
+/* const exercises = [
     {
         exercise: 'dumbbell curls🏋🏽',
         bodyType: 'biceps',
@@ -67,4 +67,13 @@ function addExercisesToContainer(array) {
     // append new element to container
 }
 
-addExercisesToContainer(exercises);
+addExercisesToContainer(exercises); */
+
+// 2
+let str1 = 'marker';
+let num = 'whiteboard'.length - str1.length;
+console.log(num); // 4
+let str2 = 'bootcamp';
+console.log(str2[num].toUpperCase()); // C
+let char = str2[num].toLowerCase(); // no output, just assigns variable c
+console.log(char + '!'); // c!
