@@ -12,30 +12,45 @@ Write a function `isPrime(number)` that returns a boolean indicating if
 
 Examples:
 
-isPrime(2); // => true
-isPrime(1693); // => true
-isPrime(15); // => false
-isPrime(303212); // => false
+
 ***********************************************************************/
 
 function isPrime(number) {
-    
+    if (number === 2) return true
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            return false
+        }
+    }
+    return true
 }
-  
+
+console.log(isPrime(2)); // => true
+console.log(isPrime(1693)); // => true
+console.log(isPrime(15)); // => false
+console.log(isPrime(303212)); // => false
+
 /***********************************************************************
 Using the `isPrime` function you made, write a function `firstNPrimes(n)`
 that returns an array of the first `n` prime numbers.
 
 Examples:
 
-firstNPrimes(0); // => []
-firstNPrimes(1); // => [2]
-firstNPrimes(4); // => [2, 3, 5, 7]
+
 ***********************************************************************/
 
 function firstNPrimes(n) {
-
+    const firstNPrimesArr = []
+    let i = 2
+    while (firstNPrimesArr.length < n) {
+        if (isPrime(i)) firstNPrimesArr.push(i)
+        i++
+    }
+    return firstNPrimesArr
 }
+console.log(firstNPrimes(0)); // => []
+console.log(firstNPrimes(1)); // => [2]
+console.log(firstNPrimes(4)); // => [2, 3, 5, 7]
 
 /***********************************************************************
  Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
