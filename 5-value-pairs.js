@@ -13,12 +13,16 @@ valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 
 const object1 = {name: 'One', location: 'Remote', age: 1};
 const object2 = {name: 'Two', location: 'San Francisco'};
-console.log(object1.location)
 
 function valuePair(obj1, obj2, key) {
+    //leaving these comments in as I didn't realize I needed bracket notation to access a key if it's not hard-coded into the object itself (THANK YOU TA'S!!!!)
+    // console.log(key) // logs 'name'
+    // console.log(obj1.name) // logs 'One'
+    // console.log(obj1.key) // logs undefined
+    //console.log(obj1[key]) // logs 'One'
     const answerArr = []
-    answerArr.push(obj1.key)
-    answerArr.push(obj2.key)
+    answerArr.push(`${key}: ${obj1[key]}`)
+    answerArr.push(`${key}: ${obj2[key]}`)
     return answerArr
 }
-console.log(valuePair(object1, object2, 'location'))
+console.log(valuePair(object1, object2, 'name'))
