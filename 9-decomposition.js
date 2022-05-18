@@ -58,11 +58,20 @@ the sum of the first `n` prime numbers.
 
 Examples:
 
-sumOfNPrimes(0); // => 0
-sumOfNPrimes(1); // => 2
-sumOfNPrimes(4); // => 17
+
 ***********************************************************************/
 
 function sumOfNPrimes(n) {
-
+    let nArray = firstNPrimes(n)
+    let sum = 0;
+    //I tried to do a .reduce() on nArray but it said the values were empty
+    //even after I console.logged it and it had values in it
+    for (let i=0; i<nArray.length; i++){
+        sum += nArray[i]
+    }
+    return sum
 }
+
+console.log(sumOfNPrimes(0)); // => 0
+console.log(sumOfNPrimes(1)); // => 2
+console.log(sumOfNPrimes(4)); // => 17
