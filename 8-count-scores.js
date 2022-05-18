@@ -33,5 +33,16 @@ countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 
 
 function countScores(people) {
-
+  const o = {}
+  for (let i = 0; i < people.length; i++){
+    let name = Object.values(people[i])[0]
+    let score = Object.values(people[i])[1]
+    if (name in o){
+      o[name] += score
+    }
+    else {
+      o[name] = score
+    }
+  }
+  return o
 }
