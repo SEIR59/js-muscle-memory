@@ -83,5 +83,5 @@ function sumOfNPrimes(n) {
         sum += primeList[i]
     }
     return sum
-}}}
+}}} 
 console.log(sumOfNPrimes(5))
