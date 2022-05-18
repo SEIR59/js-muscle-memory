@@ -18,7 +18,7 @@ const object2 = {name: 'Two', location: 'San Francisco'};
 function valuePair(obj1, obj2, key) {
     //need to create empty array to push to
     let array = [];
-    // console.log(obj1, obj2,key)
+    console.log(obj1, obj2,key)
     //key is a variable
     array.push(obj1[key]);
     array.push(obj2[key]);
