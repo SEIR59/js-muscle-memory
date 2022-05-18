@@ -9,9 +9,10 @@ oddRange(6); // => [ 1, 3, 5 ]
 ******************************************************************************/
 
 function oddRange(end) {
-    // there's probably a cleaner way to do this.
-
-    //make an index array, add one to each value, filter out values with mod===1.
-    return Array.from(Array(end).keys()).map((x)=> x+1).filter((x)=> x%2 === 1)
+    let seed = [1]
+    //while the first array value+2 is less than the end, stick it in front.
+    while(seed[0]+2 < end) {seed.unshift(seed[0]+2)}
+    //reverse the array to give the desired array
+    return seed.reverse()
 }
 console.log(oddRange(30))
