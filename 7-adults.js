@@ -1,7 +1,7 @@
-/***********************************************************************
-Write a function `adults(people)` that takes in an array of person
-objects. The function should return an array containing the names of
-those who have an age of 18 or higher.
+
+// Write a function `adults(people)` that takes in an array of person
+// objects. The function should return an array containing the names of
+// those who have an age of 18 or higher.
 
 Example:
 
@@ -10,11 +10,19 @@ const ppl = [
   {name: 'Ariel Winter', age: 20},
   {name: 'Post Malone', age: 25},
   {name: 'Willow Smith', age: 17}
-];
+]
 
-adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
-***********************************************************************/
+// adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
+
 
 function adults(people) {
-  
-}
+    const ofAge = people.filter(function(ppl) {
+     if (people.age > 18) {
+       return true;
+     } else {
+       return false;
+     }
+   })
+   return ofAge;
+  }
+  console.log(adults(people))
