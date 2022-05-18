@@ -9,10 +9,12 @@ oddRange(6); // => [ 1, 3, 5 ]
 ******************************************************************************/
 
 function oddRange(end) {
-    let seed = [1]
-    //while the first array value+2 is less than the end, stick it in front.
-    while(seed[0]+2 < end) {seed.unshift(seed[0]+2)}
-    //reverse the array to give the desired array
-    return seed.reverse()
+    let solution = []
+    let i = 1
+    while(i<end){
+        solution.push(i)
+        i+=2
+    }
+    return solution
 }
 console.log(oddRange(30))
