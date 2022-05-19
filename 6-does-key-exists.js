@@ -11,5 +11,14 @@ doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
 function doesKeyExist(obj, key) {
-
+let keyExist = false;
+if(key in obj){
+    keyExist = true
 }
+console.log(keyExist);
+return keyExist
+}
+
+const obj1 = {company: 'General Assembly', course: 'Software Engineering Immersive'}
+doesKeyExist(obj1, 'company'); // => true
+doesKeyExist(obj1, 'name'); // => false
