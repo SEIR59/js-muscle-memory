@@ -18,14 +18,8 @@ adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
 ***********************************************************************/
 
 function adults(people) {
-  let legal = [];
-  people.forEach(element => {
-    if (element.age >= 18) {
-      legal.push(element.name);
-    }
-  })
+  return people.filter((person) => person.age > 17).map((person) => person.name)
 }
-
 const ppl = [
   {name: 'Khalid Robinson', age: 22},
   {name: 'Ariel Winter', age: 20},

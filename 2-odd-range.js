@@ -10,8 +10,10 @@ oddRange(6); // => [ 1, 3, 5 ]
 
 
 function oddRange(end) {
-    const results = [];
-    for (let i = 1; i <= end; i = i+2);
+    results = [];
+    for (let i = 1; i <= end; i = i+2){
         results.push[i];
-    }
+        }
+    return results
+}
 console.log(oddRange(100));

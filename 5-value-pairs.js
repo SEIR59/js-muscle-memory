@@ -19,6 +19,7 @@ function valuePair(obj1, obj2, key) {
     newArray.push(obj1[key]);
     newArray.push(obj2[key]);
     return newArray;
+    // return [obj1[key],obj2[key]] also works
 }
 
 const object1 = {name: "One", location: "Remote", age: 1};
