@@ -25,4 +25,4 @@ function isPrime(number) {
   }
 }
 
-console.log(isPrime(11));
+console.log(isPrime(3));
