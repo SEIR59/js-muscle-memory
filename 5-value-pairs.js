@@ -15,7 +15,7 @@ valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 function valuePair(obj1, obj2, key) {
     // get the value from the objects epending on the key
     console.log(`The given key is '${key}'`);
-    arrKeyData = [];
+    let arrKeyData = [];
     arrKeyData.push(obj1[`${key}`]);
     arrKeyData.push(obj2[`${key}`]);
     return arrKeyData;
