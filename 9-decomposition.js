@@ -60,10 +60,10 @@ function firstNPrimes(n) {
       array.push(i);
     }
 }
-return array
+return array;
 }
 
-// console.log(firstNPrimes(4));
+console.log(firstNPrimes(4));
 
 /***********************************************************************
  Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
@@ -86,3 +86,13 @@ function sumOfNPrimes(n) {
 }
 
 console.log(sumOfNPrimes(4))
+
+//another way to answer this - sal helped
+function sumOfNPrimes(m){
+    let num = firstNPrimes(n);
+    let sum = 0;
+    for (let i = 0; i < num.length; i++){
+        sum += num[i];
+    }
+    return sum
+}

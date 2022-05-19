@@ -50,7 +50,13 @@ function countScores(people) {
     let newName = people[i].name;
     let newScores = people[i].score;
     // console.log(names, scores)
-    objectAreStupid[newName] = newScores;
+
+    //need += to add the scores together
+    if (objectAreStupid[newName]) {
+      objectAreStupid[newName] += newScores;
+    } else {
+      objectAreStupid[newName] = newScores;
+    }
   }
   return objectAreStupid;
 }
