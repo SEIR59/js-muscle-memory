@@ -9,7 +9,11 @@ const obj1 = {company: 'General Assembly', course: 'Software Engineering Immersi
 doesKeyExist(obj1, 'company'); // => true
 doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
-
+const obj1 = {company: 'General Assembly', course: 'Software Engineering Immersive'}
 function doesKeyExist(obj, key) {
+return obj[key] !== undefined;
 
 }
+
+console.log(doesKeyExist(obj1, 'company'));
+console.log(doesKeyExist(obj1, 'name'));ß
