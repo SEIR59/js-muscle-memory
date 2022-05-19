@@ -15,10 +15,10 @@ const obj1 = {company: 'General Assembly', course: 'Software Engineering Immersi
 function doesKeyExist(obj, key) {
     //need an if else to test if key is in object
     //object.keys give me an array - need to make the keys variable into an array
-    let keys =Object.keys(obj)
+    let horse = Object.keys(obj)
     // console.log(key)
     //use .includes to see if the array includes the key
-    if (keys.includes(key)){
+    if (horse.includes(key)){
         return true
     }else {
         return false

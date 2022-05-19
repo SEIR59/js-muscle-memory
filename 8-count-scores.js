@@ -31,7 +31,29 @@ const peeps = [
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 ***********************************************************************/
 
+const peeps = [
+  { name: "Pete", score: 2 },
+  { name: "Dexter", score: 2 },
+  { name: "Mike", score: 2 },
+  { name: "Dexter", score: 2 },
+  { name: "Mike", score: 2 },
+  { name: "Pete", score: 2 },
+  { name: "Dexter", score: 2 },
+];
 
 function countScores(people) {
+  //neeed to include math in here so that all scores will add together
+  //try definig scores?
+  const objectAreStupid = {};
 
+  for (i = 0; i < people.length; i++) {
+    let newName = people[i].name;
+    let newScores = people[i].score;
+    // console.log(names, scores)
+    objectAreStupid[newName] = newScores;
+  }
+  return objectAreStupid;
 }
+// countScores(ppl);
+console.log(countScores(peeps));
+//=> { Pete: 2, Mike: 10, Dexter: 12 }
