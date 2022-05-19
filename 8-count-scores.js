@@ -33,5 +33,23 @@ countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 
 
 function countScores(people) {
+  // Create an empty object to store values in
+  let finalScores = {}
 
+  // For each person
+  people.forEach(person => {
+    // Create a variable to hold their name
+    let name =  Object.values(person)[0]
+    // Create a variable to hold their score
+    let score = Object.values(person)[1]
+
+    // If that person's name is in the score already, add their score to their total scores
+    if (name in finalScores) finalScores[name] += score
+
+    // Otherwise that new person has a score of...
+    else finalScores[name] = score
+  })
+  return finalScores
 }
+
+

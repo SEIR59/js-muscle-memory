@@ -16,5 +16,10 @@ adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
 ***********************************************************************/
 
 function adults(people) {
-  
+  let adultsOnly = []
+  people.forEach(person => {
+    if (person.age > 18) adultsOnly.push(person.name)
+  })
+  return adultsOnly
 }
+
