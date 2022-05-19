@@ -30,24 +30,21 @@ const peeps = [
 ];
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 ***********************************************************************/
-let allTimeScores = {};
-
 function countScores(people) {
-  // let updatedPeople = {};
+  let allTimeScores = {};
 
-  people.forEach(person => {
-    let newScoreEntry = person.score;
-    if (person in allTimeScores) { // **FIX THIS LINE FIRST**//////////////////////////////////////
-      console.log(`lel`);
-    }
-    else {
-      let newPersonEntry = { [person.name] : newScoreEntry };
-      Object.assign(allTimeScores, newPersonEntry);
-    }
-
+    people.forEach(person => {
+      if (person.name in allTimeScores) {
+        let newScoreEntry = person.score + allTimeScores[person.name];
+        let newPersonEntry = { [person.name]: newScoreEntry };
+        Object.assign(allTimeScores, newPersonEntry);
+      }
+      else {
+        let newPersonEntry = { [person.name]: person.score };
+        Object.assign(allTimeScores, newPersonEntry);
+      }
+    })
     console.log(allTimeScores);
-
-  });
 }
 
 const ppl = [
@@ -58,7 +55,7 @@ const ppl = [
 ];
 
 const countPpl = countScores(ppl);
-countPpl; //=> { Pete: 2, Mike: 10, Dexter: 12 }
+// countPpl; //=> { Pete: 2, Mike: 10, Dexter: 12 }
 
 const peeps = [
   { name: "Pete", score: 2 },

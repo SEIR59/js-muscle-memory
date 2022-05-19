@@ -20,6 +20,7 @@ function doesKeyExist(obj, key) {
     console.log(exists);
     return exists;
 }
+
 const obj1 = {company: 'General Assembly', course: 'Software Engineering Immersive'}
 doesKeyExist(obj1, 'company'); // => true
 doesKeyExist(obj1, 'name'); // => false

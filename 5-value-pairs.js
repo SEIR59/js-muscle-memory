@@ -15,8 +15,8 @@ valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 function valuePair(obj1, obj2, key) {
     let twoValues = [];
 
-    twoValues.push(obj1.key);
-    twoValues.push(obj2.key);
+    twoValues.push(`${obj1[key]}`);
+    twoValues.push(`${obj2[key]}`);
     
     console.log(twoValues);
     return twoValues;
