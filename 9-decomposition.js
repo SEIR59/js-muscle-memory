@@ -19,9 +19,23 @@ isPrime(303212); // => false
 ***********************************************************************/
 
 function isPrime(number) {
-    
+    prime = true
+    for(let i = 2; i < number; i++ ){
+        if (number % i === 0) {
+            prime = false
+       }
+    }
+    if (prime === true){
+        return true
+    }else if (prime === false){
+        return false
+    }
+
 }
-  
+  console.log(isPrime(2))
+  console.log(isPrime(1693))
+  console.log(isPrime(15))
+  console.log(isPrime(303212))
 /***********************************************************************
 Using the `isPrime` function you made, write a function `firstNPrimes(n)`
 that returns an array of the first `n` prime numbers.
