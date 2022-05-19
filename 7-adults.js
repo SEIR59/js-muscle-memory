@@ -15,6 +15,26 @@ const ppl = [
 adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
 ***********************************************************************/
 
-function adults(people) {
-  
-}
+const ppl = [
+  { name: "Khalid Robinson", age: 22 },
+  { name: "Ariel Winter", age: 20 },
+  { name: "Post Malone", age: 25 },
+  { name: "Willow Smith", age: 17 },
+];
+
+const adults = function (person) {
+  return person.age > 18;
+};
+
+const over18 = ppl.filter(adults);
+console.log(over18);
+
+// // (1) Write code that uses the filter function, and the below isCool function to return a list of people who are cool.
+
+// const isCool = function (person) {
+//   return person.coolnessScore > 20;
+// };
+
+// // Your code goes here
+// const coolPeople = people.filter(isCool);
+// console.log(coolPeople);
