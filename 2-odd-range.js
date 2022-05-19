@@ -9,5 +9,12 @@ oddRange(6); // => [ 1, 3, 5 ]
 ******************************************************************************/
 
 function oddRange(end) {
-
+    let solution = []
+    let i = 1
+    while(i<=end){
+        solution.push(i)
+        i+=2
+    }
+    return solution
 }
+console.log(oddRange(31))
