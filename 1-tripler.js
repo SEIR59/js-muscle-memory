@@ -13,5 +13,6 @@ function tripler(array) {
       console.log(array[i] * 3)
   }
 }
-
 console.log(tripler([1, 2 ,3]))
+
+ 
