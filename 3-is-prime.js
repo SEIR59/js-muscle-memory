@@ -26,4 +26,3 @@ isPrime(10); // => false
 isPrime(11); // => true
 isPrime(9); // => false
 isPrime(2017); // => true
-

@@ -25,4 +25,4 @@ const object1 = {name: 'One', location: 'Remote', age: 1};
 const object2 = {name: 'Two', location: 'San Francisco'};
 
 valuePair(object1, object2, 'location'); // => [ 'Remote', 'San Francisco' ]
-valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
+valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ] 

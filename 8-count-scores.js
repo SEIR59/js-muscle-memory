@@ -66,4 +66,4 @@ const peeps = [
   { name: "Pete", score: 2 },
   { name: "Dexter", score: 2 }
 ];
-countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
+countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 } 

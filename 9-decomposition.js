@@ -84,4 +84,4 @@ function sumOfNPrimes(n) {
 
 sumOfNPrimes(0); // => 0
 sumOfNPrimes(1); // => 2
-sumOfNPrimes(4); // => 17
+sumOfNPrimes(4); // => 17 
