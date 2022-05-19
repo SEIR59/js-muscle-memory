@@ -12,10 +12,21 @@ isPrime(2017); // => true
 ***************************************************************************/
 
 function isPrime(number) {
-    const array = []
-if (let i = 2; i * i <= number; i++)
-if (num % i === 0)
-return false;
-return number > 1;
+    let prime = true;
+    if(number === 1) {
+        prime = false
+    }
+    else{
+        for (let i = 2; i < number; i++){
+            if(number % i === 0){
+                prime = false
+                break
+            }
+
+        }
+    }
+return prime
+
 }
+console.log(isPrime(2017))
 
