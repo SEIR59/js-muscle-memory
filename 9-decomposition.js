@@ -71,5 +71,16 @@ sumOfNPrimes(4); // => 17
 ***********************************************************************/
 
 function sumOfNPrimes(n) {
-
+    let sumTracker = 0;
+    const primeTracker = firstNPrimes(n);
+    for(let i = 0; i < primeTracker.length; i++){
+        sumTracker += primeTracker[i];
+    }
+    return sumTracker;
 }
+console.log(sumOfNPrimes(0));
+sumOfNPrimes(0); // => 0
+console.log(sumOfNPrimes(1));
+sumOfNPrimes(1); // => 2
+console.log(sumOfNPrimes(4));
+sumOfNPrimes(4); // => 17
