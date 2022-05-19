@@ -19,9 +19,21 @@ isPrime(303212); // => false
 ***********************************************************************/
 
 function isPrime(number) {
-    
+    if (number === 1){
+        return false
+    } else if ( number ===2){
+        return true;
+    } else {
+        for (i = 2; i < number; i++){
+            if (number % i === 0){
+                return false;
+            } else {
+                return true;
+            }
+        }
+    }
 }
-  
+  console.log(isPrime(19));
 /***********************************************************************
 Using the `isPrime` function you made, write a function `firstNPrimes(n)`
 that returns an array of the first `n` prime numbers.
@@ -34,9 +46,15 @@ firstNPrimes(4); // => [2, 3, 5, 7]
 ***********************************************************************/
 
 function firstNPrimes(n) {
-
+    let array = [];
+    for (let i = 0; array.length < n; i++){
+        if (isPrime(i) === true){
+            array.push(i);
+        }
+    }
+    return array
 }
-
+console.log(firstNPrimes(8));
 /***********************************************************************
  Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
 the sum of the first `n` prime numbers.
@@ -49,5 +67,11 @@ sumOfNPrimes(4); // => 17
 ***********************************************************************/
 
 function sumOfNPrimes(n) {
-
+    let x = firstNPrimes(n)
+    function add(total, newNumber){
+        return total + newNumber
+    }
+    let sum = x.reduce(add)
+    return sum
 }
+console.log(sumOfNPrimes(4));
