@@ -11,5 +11,13 @@ doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
 function doesKeyExist(obj, key) {
-
+    return [key] in obj
 }
+const object1 = {
+    name: 'One', 
+    location: 'Remote', 
+    age: 1
+};
+
+console.log(doesKeyExist(object1, 'age'))
+console.log(doesKeyExist(object1, 'address'))
