@@ -11,3 +11,10 @@ tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 function tripler(array) {
   
 }
+
+function tripler(nums) {
+    return nums.map(function (num) {
+      return num * 3;
+    });
+  }
+  
