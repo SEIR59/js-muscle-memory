@@ -63,7 +63,8 @@ Examples:
 
 function sumOfNPrimes(n) {
     let nArray = firstNPrimes(n)
-    let sum = 0;
+
+    return sum = nArray.reduce((a,b) => a+b, 0)
     //I tried to do a .reduce() on nArray but it said the values were empty
     //even after I console.logged it and it had values in it
     for (let i=0; i<nArray.length; i++){
