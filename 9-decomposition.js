@@ -5,7 +5,6 @@ before moving on to the next problem. Each function will require the
 previous to solve.
 ***********************************************************************/
 
-
 /***********************************************************************
 Write a function `isPrime(number)` that returns a boolean indicating if
 `number` is prime or not. Assume `number` is a positive integer.
@@ -19,9 +18,21 @@ isPrime(303212); // => false
 ***********************************************************************/
 
 function isPrime(number) {
-    
+  if (number === 2) {
+    return true;
+  } else if (number > 1) {
+    for (var i = 2; i < number; i++) {
+      if (number % i !== 0) {
+        return true;
+      } else if (number === i * i) {
+        return false;
+      } else {
+        return false;
+      }
+    }
+  }
 }
-  
+
 /***********************************************************************
 Using the `isPrime` function you made, write a function `firstNPrimes(n)`
 that returns an array of the first `n` prime numbers.
@@ -34,8 +45,18 @@ firstNPrimes(4); // => [2, 3, 5, 7]
 ***********************************************************************/
 
 function firstNPrimes(n) {
+  var primes = [];
+  var num = 2;
 
+  while (primes.length < n) {
+    if (isPrime(num)) {
+      primes.push(num);
+    }
+    num += 1;
+  }
+  return primes;
 }
+console.log(firstNPrimes(4));
 
 /***********************************************************************
  Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
@@ -49,5 +70,7 @@ sumOfNPrimes(4); // => 17
 ***********************************************************************/
 
 function sumOfNPrimes(n) {
-
+  let sum = firstNPrimes(n).reduce((a, b) => a + b);
+  return sum;
 }
+console.log(sumOfNPrimes(4));

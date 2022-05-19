@@ -12,12 +12,20 @@ isPrime(2017); // => true
 ***************************************************************************/
 
 function isPrime(number) {
-    for (let i = 0; i <= number; i++) {
-        if (number %3 === 0 || %9 === 0){ //struggled with this syntax: setting two integers that the passed integer can be divided by 
-            return true
-        } else {
+if (number === 2) {
+    return true;
+} else if (number > 1) {
+    for (var i = 2; i < number; i++) {
+
+        if (number % i !== 0) {
+            return true;
+        } else if (number === i * i) {
             return false
-        }
-    }
+        } else {
+            return false;
+        } 
+}
+}
 }
 
+console.log(isPrime(121));
