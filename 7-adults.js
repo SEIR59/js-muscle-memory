@@ -14,7 +14,16 @@ const ppl = [
 
 adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
 ***********************************************************************/
+const ppl = [
+  {name: 'Khalid Robinson', age: 22},
+  {name: 'Ariel Winter', age: 20},
+  {name: 'Post Malone', age: 25},
+  {name: 'Willow Smith', age: 17}
+];
 
 function adults(people) {
-  
+  return people.age > 18;
 }
+const over18 = ppl.filter(adults);
+
+console.log(over18);
