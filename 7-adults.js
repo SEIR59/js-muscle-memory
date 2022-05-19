@@ -14,7 +14,7 @@ const ppl = [
 
 adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
 ***********************************************************************/
-
+const old = []
 function adults(people) {
   for (let i = 0; i < people.length; i++){
     if (people[i].age >= 18){
