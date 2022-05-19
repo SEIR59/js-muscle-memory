@@ -27,12 +27,12 @@ function isPrime(number) {
         for (let i = 2; i < number; i++) {
             if (number % i === 0) {
                 prime = false
-                return 
-                // return alone just lets me leave the isPrime function
+                break
             }
         }
     }
     return prime
+}
 
     
 
@@ -53,7 +53,6 @@ firstNPrimes(4); // => [2, 3, 5, 7]
 function firstNPrimes(n) {
     const nPrimes = []
     for (let i = 1; i < Infinity; i++) {
-        // The global property Infinity is a numeric value representing infinity. - MDN
         if (nPrimes.length === n) {
             break
         }
@@ -64,6 +63,7 @@ function firstNPrimes(n) {
         }
     }
     return nPrimes
+}
 
 /***********************************************************************
  Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
@@ -84,5 +84,5 @@ function sumOfNPrimes(n) {
         sum += primeList[i]
     }
     return sum
-}}} 
-console.log(sumOfNPrimes(5))
+} 
+console.log(sumOfNPrimes(4))
