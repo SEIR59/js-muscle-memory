@@ -19,7 +19,7 @@ countPpl; //=> { Pete: 2, Mike: 10, Dexter: 12 }
 
 Example 2
 
-const peeps = [
+*/const peeps = [
   {name: "Pete", score: 2},
   {name: "Dexter", score: 2},
   {name: "Mike", score: 2},
@@ -29,9 +29,20 @@ const peeps = [
   {name: "Dexter", score: 2}
 ];
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
-***********************************************************************/
+
 
 
 function countScores(people) {
+  let obj = []
+  for (let i = 0; i < people.length; i++){
 
+    let one = people [i] .name
+  
+    if(object[one]) {
+
+    }
+    console.log(one,two)
+    obj [one] = two;
+  }
+  return obj;
 }
