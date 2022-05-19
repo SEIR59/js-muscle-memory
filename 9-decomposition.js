@@ -1,92 +1,60 @@
-/***********************************************************************
-In these exercises we will be practicing decomposition by building
-multiple functions. Be sure to test each function thoroughly as you go
-before moving on to the next problem. Each function will require the
-previous to solve.
-***********************************************************************/
-
-
-/***********************************************************************
-Write a function `isPrime(number)` that returns a boolean indicating if
-`number` is prime or not. Assume `number` is a positive integer.
-
-Examples:
-
-isPrime(2); // => true
-isPrime(1693); // => true
-isPrime(15); // => false
-isPrime(303212); // => false
-***********************************************************************/
+//Below are answers for what I hope is a speedy calculation. See previous versions for uncropped versions of the functions. 
+//For example, isPrime() being able to handle even numbers. isPrimeRefined() cannot as, it only works with odd numbers, which makes it faster when summing large numbers of primes.
 
 let lastEntry = 1
 let workingOddArray = []
 
 function oddRangeRefined(end) {
-    while(lastEntry<end){
-        lastEntry+=2
+
+    while (lastEntry < end) {
+        lastEntry += 2
         workingOddArray.push(lastEntry)
     }
 }
 
 function isPrimeRefined(number) {
+
     let i = 0
-    let end = number/2
-    if (end > lastEntry){
-        oddRangeRefined(lastEntry + 500)
+    let end = number / 2
+
+    if (end > lastEntry) {
+        oddRangeRefined(lastEntry + 1000)
     }
-    while(number%workingOddArray[i] !== 0 && workingOddArray[i] < end){
+
+    while (number % workingOddArray[i] !== 0 && workingOddArray[i] < end) {
         i++
     }
-    if (workingOddArray[i] > end){
+
+    if (workingOddArray[i] > end) {
         return true
-    }else{
+    } else {
         return false
     }
 }
-//console.log( '19' , isPrime(19))
-/***********************************************************************
-Using the `isPrime` function you made, write a function `firstNPrimes(n)`
-that returns an array of the first `n` prime numbers.
-
-Examples:
-
-firstNPrimes(0); // => []
-firstNPrimes(1); // => [2]
-firstNPrimes(4); // => [2, 3, 5, 7]
-***********************************************************************/
 
 function firstNPrimes(n) {
+
     const nPrimes = []
-    if(n===1){
-        return [2]
-    } else{
-        nPrimes.push(2)
+    if (n === 0) {
+        return []
     }
+
+    nPrimes.push(2)
+    
     let j = 3
-    while (nPrimes.length<n){
-        isPrimeRefined(j) ? nPrimes.push(j) : false
-        j+=2
+    while (nPrimes.length < n) {
+        if(isPrimeRefined(j)){nPrimes.push(j)}
+        j += 2
     }
+
     return nPrimes
 }
-//console.log('checking 5' ,firstNPrimes(5))
 
-/***********************************************************************
- Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
-the sum of the first `n` prime numbers.
-
-Examples:
-
-sumOfNPrimes(0); // => 0
-sumOfNPrimes(1); // => 2
-sumOfNPrimes(4); // => 17
-***********************************************************************/
-//i think the example 
 function sumOfNPrimes(n) {
     let start = new Date()
-    let sumNPrimes = firstNPrimes(n).reduce((x,y)=>x+y)
+    let sumNPrimes = firstNPrimes(n).reduce((x, y) => x + y)
     let end = new Date() - start
-    return [sumNPrimes , end]
+    return [sumNPrimes, end]
 }
 let x = 10000 //doing 10x this, 100,000 took my laptop about 17s.
-console.log(`checking sum of first ${x} primes in format [sum, calculation-time]` , sumOfNPrimes(x))
+console.log(`checking sum of first ${x} primes in format [sum, calculation-time]`, sumOfNPrimes(x))
