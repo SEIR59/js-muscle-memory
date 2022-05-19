@@ -35,8 +35,13 @@ function countScores(people) {
   let obj = {}
   for(let i = 0; i < people.length; i++){
     let valueOne = people[i].name;
-    let valueTwo = people[i].score
-    obj[valueOne] = valueTwo
+    if(obj[valueOne]){
+      obj[valueOne] = obj[valueOne] + people[i].score
+    } else{
+      valueOne = people[i].name
+      valueTwo = people[i].score
+      obj[valueOne] = valueTwo
+    }
+    }
+    return obj
   }
-  return obj
-}
