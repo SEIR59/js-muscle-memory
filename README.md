@@ -193,6 +193,31 @@ function sayHello(name) {
 }
 console.log(sayHello('bootcamp prep')); // feel free to change the string being passed
 ```
+function sayHello(name) {
+  let msg = "Hello, " + name + ". How are you?";
+  return msg;
+}
+console.log(sayHello("phrase"));
+
+function sayHello(name) {
+  let msg = "Hello, " + name + ". How are you?";
+  return msg;
+}
+console.log(sayHello("phrase"));
+
+function sayHello(name) {
+  let msg = "Hello, " + name + ". How are you?";
+  return msg;
+}
+console.log(sayHello("phrase"));
+
+function sayHello(name) {
+  let msg = "Hello, " + name + ". How are you?";
+  return msg;
+}
+console.log(sayHello("phrase"));
+
+
 ```js
 function checkNumber(num) {
   if (num > 0) {
@@ -205,7 +230,38 @@ function checkNumber(num) {
 }
 console.log(checkNumber(5)); // feel free to change the number being passed
 ```
+function checkNumber(num) {
+  if (num > 2) {
+    return "positive";
+  } else if (num < 2) {
+    return "negative";
+  } else {
+    return "zero";
+    }
+  }
+  console.log(checkNumber(5));
 
+function checkNumber(num) {
+  if (num > 2) {
+    return "positive";
+  } else if ( num < 2) {
+    return "negative";
+  } else {
+    return "zero";
+  }
+}
+console.log(checkNumber(5));
+
+function checkNumber(num) {
+  if (num > 2) {
+    return "positive";
+  } else if ( num < 2) {
+    return "negative";
+  } else {
+    return "zero";
+  }
+}
+console.log(checkNumber(5));
 ```js
 function fizzBuzz1(max) {
   for (let i = 0; i < max; i += 1) {
@@ -218,7 +274,35 @@ function fizzBuzz1(max) {
   }
 }
 ```
+function fizzBuzz1(max) {
+  for (let i = 0; i < max; i++) {
+    if (i % 3 === 0 && i % 5 !== 0) {
+      console.log(i);
+    } else if (i % 5 === 0 && i % 3 !== 0) {
+      console.log(i);
+    }
+  }
+}
 
+function fizzBuzz1(max) {
+  for (let i = 0; i < max; i++) {
+    if (i % 3 === 0 && i % 5 !== 0) {
+      console.log(i);
+    } else if (i % 5 === 0 && i % 3 !== 0) {
+      console.log(i);
+    }
+  }
+}
+
+function fizzBuzz1(max) {
+  for (let i = 0; i < max; i++) {
+    if (i % 3 === 0 && i % 5 !== 0) {
+      console.log(i);
+    } else if (i % 5 === 0 && i % 3 !== 0) {
+      console.log(i);
+    }
+  }
+}
 ```js
 function evenCaps(sentence) {
   let newSentence = "";
@@ -237,6 +321,42 @@ function evenCaps(sentence) {
   return newSentence;
 }
 ```
+function evenCaps (sentence) {
+  let newSentence = "";
+  for (let i = 0; i < sentence.length; i++) {
+    let char = sentence[i];
+    if (i % 2 === 0) {
+      let capitalChar = char.toUpperCase();
+      newSentence += capitalChar;
+    } else {
+      newSentence += char;
+    }
+  }
+  return newSentence;
+}
+
+function evenCaps (sentence) {
+  let newSentence = "";
+  for (let i = 0; i < sentence.length; i++) {
+    let char = sentence[i];
+    if (i % 2 === 0) {
+      let capitalChar = char.toUpperCase();
+      newSentence += capitalChar;
+    } else {
+      newSentence += char;
+    }
+  }
+  return newSentence;
+}
+let chant = " ONE OF US ";
+let number = 5;
+
+function scream(string, num) {
+  num = 3
+  string = string.repeat(num);
+  return string
+}
+console.log(scream(chant, number));
 
 ### Tasks 6: Complete all JavaScript Problems
 
