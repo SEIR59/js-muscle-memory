@@ -8,13 +8,25 @@ tripler([1,2,3]); // => [ 3, 6, 9 ]
 tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
 
-function tripler(array) {
+// function tripler(array) {
   
-}
+// }
+
+// function tripler(nums) {
+//     let Array = nums.map(function (num) {
+//       return num * 3;
+//     });
+//     return Array
+//   }
+
+// console.log(tripler[1,2,3])
+let thisArray = [1, 2, 3]
 
 function tripler(nums) {
-    return nums.map(function (num) {
-      return num * 3;
-    });
-  }
-  
+  nums.forEach((element, index) => {
+    nums[index] = element * 3;
+    return nums
+  });
+
+}
+console.log(tripler([1,2,3])
