@@ -60,96 +60,97 @@
 
 
 // function addExercisesToContainer(e) {
-//     // iterate through the array
-//     // for (let i = 0; i < array.length; i++) {
-//     //     // set each element to a variable
-//     //     let exerciseVariable = array[i].exercise;
-//     //     let newElement = document.createElement('p');
-//     //     newElement.textContent = exerciseVariable;
-//     //     container.appendChild(newElement);
-//     // }
-//     array.forEach(() => {
+//     iterate through the array
+//     for (let i = 0; i < array.length; i++) {
+//         // set each element to a variable
+//         let exerciseVariable = array[i].exercise;
+//         let newElement = document.createElement('p');
+//         newElement.textContent = exerciseVariable;
+//         container.appendChild(newElement);
+//     }
+//     // array.forEach(() => {
         
-//     });
-//     // create a new element
-//     // access "exercise" key to get value
-//     // add value text to element (textContent)
-//     // append new element to container
+// //     });
+// //     // create a new element
+// //     // access "exercise" key to get value
+// //     // add value text to element (textContent)
+// //     // append new element to container
+// // }
+
+// // addExercisesToContainer(exercises);
+
+
+// // const sayHello = (name) => {
+// //     let msg = `Hello , ${name}. How are you?`
+// //     return msg
+// // }
+// // console.log(sayHello('bootcamp prep'))
+
+// // const sayHello = (name) => {
+// //     let msg = `Hello ${name}. How are you?`
+// //     return msg
+// // }
+// // console.log(sayHello('bootcamp prep'))
+
+// // const sayHello = (name) => {
+// //     let msg = `Hello ${name}. How are you?`
+// //     return msg
+// // }
+// // console.log(sayHello('bootcamp prep'))
+
+// // const sayHello = (name) => {
+// //     let msg =`Hello ${name}. How are you?`
+// //     return msg
+// // }
+// // console.log(sayHello('bootcamp prep'))
+
+// // const sayHello = (name) => {
+// //     let msg = `Hello ${name}.`
+// //     return msg
+// // }
+// // console.log(sayHello('bootcamp prep'))
+
+
+// class Player{
+//     constructor(name,age,college){
+//         this.name = name,
+//         this.college = college,
+//         this.age = age
+//     }
+//     intro() {
+//         return `Hello my name is ${this.name}`
+//     }
+//     run() {
+//         return "Run"
+//     }
 // }
 
-// addExercisesToContainer(exercises);
+// const playerOne = new Player('John', 19, "UCLA")
+// const playerTwo = new Player("Sam", 20, 'Stanford')
 
-
-// const sayHello = (name) => {
-//     let msg = `Hello , ${name}. How are you?`
-//     return msg
+// class InstagramUser {
+//     constructor(email,username){
+//     this.username = username
+//     this.email = email
+//     }
 // }
-// console.log(sayHello('bootcamp prep'))
 
-// const sayHello = (name) => {
-//     let msg = `Hello ${name}. How are you?`
-//     return msg
+// const johnSmith = new InstagramUser('john@gmail.com', 'johnsmith')
+
+// const array = [
+//     {email: 'john@gmail.com', username: 'johnsmith'}
+// ]
+
+
+
+// class Cars{
+//     constructor(make, model, year){
+//         this.make = make,
+//         this.year = year,
+//         this.model = model
+//     }
 // }
-// console.log(sayHello('bootcamp prep'))
+// const supra = new Cars('Toyota', 'Supra', 2021)
+// console.log(supra)
 
-// const sayHello = (name) => {
-//     let msg = `Hello ${name}. How are you?`
-//     return msg
-// }
-// console.log(sayHello('bootcamp prep'))
-
-// const sayHello = (name) => {
-//     let msg =`Hello ${name}. How are you?`
-//     return msg
-// }
-// console.log(sayHello('bootcamp prep'))
-
-// const sayHello = (name) => {
-//     let msg = `Hello ${name}.`
-//     return msg
-// }
-// console.log(sayHello('bootcamp prep'))
-
-
-class Player{
-    constructor(name,age,college){
-        this.name = name,
-        this.college = college,
-        this.age = age
-    }
-    intro() {
-        return `Hello my name is ${this.name}`
-    }
-    run() {
-        return "Run"
-    }
-}
-
-const playerOne = new Player('John', 19, "UCLA")
-const playerTwo = new Player("Sam", 20, 'Stanford')
-
-class InstagramUser {
-    constructor(email,username){
-    this.username = username
-    this.email = email
-    }
-}
-
-const johnSmith = new InstagramUser('john@gmail.com', 'johnsmith')
-
-const array = [
-    {email: 'john@gmail.com', username: 'johnsmith'}
-]
-
-
-
-class Cars{
-    constructor(make, model, year){
-        this.make = make,
-        this.year = year,
-        this.model = model
-    }
-}
-const supra = new Cars('Toyota', 'Supra', 2021)
-console.log(supra)
-
+//  practice from class

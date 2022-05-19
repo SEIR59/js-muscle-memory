@@ -19,7 +19,8 @@ function catBuilder(name, color, toys) {
     }
     return cat
 }
+const cat1 = catBuilder('Garfield', 'golden', ['scratching-post', 'yarn']);
+const cat2 = catBuilder('Whiskers', 'rainbow', ['poptarts']);
 
-
-console.log(catBuilder('Garfield','golden', ['scratching-post', 'yarn']))
-console.log(catBuilder('Whiskers','rainbow', ['poptarts']))
+console.log(cat2)
+console.log(cat1)

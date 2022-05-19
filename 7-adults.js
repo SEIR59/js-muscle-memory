@@ -16,7 +16,7 @@ adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
 ***********************************************************************/
 
 function adults(people) {
-  newArr = people.filter((item) =>{
+  let newArr = people.filter((item) =>{
     return item.age >= 18
   })
   return newArr
