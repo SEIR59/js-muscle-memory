@@ -14,20 +14,20 @@ isPrime(2017); // => true
 // a and b can't be greater than the square root of n since the largest number both can factor down into is the square root
 // without one being smalled than the square root. If we can't find any factors less than or equal to the sqrt, n must be prime
 
-
 function isPrime(number) {
-    // If the number is 2, it is prime
-    if (number === 2) return true
+    // Let the default state of prime be true
+    let prime = true
 
-    // A number is prime if it is only divisible by itself and 1. Take the square root
-    let sqrt = Math.sqrt(number)
+    // If the number is 1, it's not prime
+    if (number === 1) prime = false
 
-    // For every number from 2 to the square root of the number
-    for (let i = 2; i < sqrt; i++){
-        
-        // If the number is divisible by any, return false
-        if (num % i === 0) return false
+    // For each number from 2 to the number, if the number is divisible by any number, it's not prime
+    for (let i = 2; i < number; i++){
+        if (number % i === 0){
+            prime = false
+        }
     }
-    return true;
+    // Otherwise, the number is prime
+    return prime;
 }
 
