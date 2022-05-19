@@ -16,5 +16,12 @@ adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
 ***********************************************************************/
 
 function adults(people) {
-  
+  let result =[]
+  for (let i = 0; i < people.length; i++){
+    if (people[i].age >= 18){
+      result.push(people[i].name)
+    }
+  }
+  return old
 }
+

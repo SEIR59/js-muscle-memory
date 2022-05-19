@@ -12,5 +12,12 @@ cat2; // => { name: 'Whiskers', color: 'rainbow', toys: [ 'poptarts' ] }
 ***********************************************************************/
 
 function catBuilder(name, color, toys) {
-
+    const catObject = {}
+    catObject.name = name
+    catObject.color = color
+    catObject.toys = toys
+    return catObject
+}
+const cat1 = catBuilder('Garfild', 'golden', ['scratching-post', 'yarn'])
+console.log(cat1)
 }
