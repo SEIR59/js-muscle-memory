@@ -31,7 +31,23 @@ const peeps = [
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 ***********************************************************************/
 
-
 function countScores(people) {
+  const obj = {};
+  const arr = people.map((ppl) => {
+    console.log(ppl);
+    obj[`${ppl.name}`] = ppl.score;
+    console.log(obj);
+  });
 
+  return obj;
 }
+
+const ppl = [
+  { name: "Pete", score: 10 },
+  { name: "Mike", score: 10 },
+  { name: "Pete", score: -8 },
+  { name: "Dexter", score: 12 },
+];
+
+const countPpl = countScores(ppl);
+console.log(countPpl); //=> { Pete: 2, Mike: 10, Dexter: 12 }
