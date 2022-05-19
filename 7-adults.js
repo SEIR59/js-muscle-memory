@@ -15,6 +15,25 @@ const ppl = [
 adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
 ***********************************************************************/
 
-function adults(people) {
-  
+const ppl = [
+  {name: 'Khalid Robinson', age: 22},
+  {name: 'Ariel Winter', age: 20},
+  {name: 'Post Malone', age: 25},
+  {name: 'Willow Smith', age: 17}
+];
+
+function adults(tuna) {
+
+    const ofAge = tuna.filter(function(zebras) {
+      if (zebras.age > 18){
+        return true
+      } else {
+        return false
+    }  
+  })    
+        return ofAge 
+        
 }
+
+console.log(adults(ppl))
+

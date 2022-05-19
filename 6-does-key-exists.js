@@ -10,6 +10,20 @@ doesKeyExist(obj1, 'company'); // => true
 doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
-function doesKeyExist(obj, key) {
+const obj1 = {
+  company: "General Assembly",
+  course: "Software Engineering Immersive",
+};
 
+function doesKeyExist(obj, key) {
+  let horse = Object.keys(obj);
+  
+  if (horse.includes(key)) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+console.log(doesKeyExist(obj1, "company"));
+console.log(doesKeyExist(obj1, "name")); // => true

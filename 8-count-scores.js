@@ -31,7 +31,35 @@ const peeps = [
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 ***********************************************************************/
 
+const peeps = [
+  {name: "Pete", score: 2},
+  {name: "Dexter", score: 2},
+  {name: "Mike", score: 2},
+  {name: "Dexter", score: 2},
+  {name: "Mike", score: 2},
+  {name: "Pete", score: 2},
+  {name: "Dexter", score: 2}
+];
 
 function countScores(people) {
 
+  const newObj = {}
+
+  for (i = 0; i < people.length; i++){
+
+  let newNames = people[i].name
+  let newScores = people[i].score
+  // console.log(names, scores)
+  newObj[newNames] = newScores;
 }
+ 
+  return newObj;
+}
+  
+
+  // countScores(peeps);
+  console.log(countScores(peeps));
+
+
+
+
