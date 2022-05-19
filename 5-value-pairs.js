@@ -12,6 +12,23 @@ valuePair(object1, object2, 'location'); // => [ 'Remote', 'San Francisco' ]
 valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 ***********************************************************************/
 
-function valuePair(obj1, obj2, key) {
-
+const objectOne = {
+    name: 'One',
+    location: 'Remote',
+    age: 1
 }
+
+const objectTwo = {
+    name: 'Two',
+    location: 'San Francisco'
+}
+
+const valuePair = (object1, object2, key) => {
+    let newArray = []
+    newArray.push(` ${object1[key]}`)
+    newArray.push(`${object2[key]}`)
+    return newArray
+}
+
+console.log(valuePair(objectOne, objectTwo, 'location'))
+
