@@ -70,4 +70,9 @@ sumOfNPrimes(1); // => 2
 sumOfNPrimes(4); // => 17
 ***********************************************************************/
 
-function sumOfNPrimes(n) {}
+function sumOfNPrimes(n) {
+  let sum = firstNPrimes(n).reduce((a, b) => a + b);
+  return sum;
+}
+
+console.log(sumOfNPrimes(4));
