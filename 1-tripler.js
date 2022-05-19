@@ -10,12 +10,9 @@
 
 function tripler(array) {
   const numbers = [];
-  for (i =0 ; i < array.length; i += 1){
-      let num = array [i];
-      let byThree = num * 3
-      numbers.push(num)   
+  for(let i = 0; i < array.length; i++){
+    numbers.push(array[i] *3)
   }
-return numbers;
+  return numbers
 }
-console.log(tripler([1,2,3]));
-console.log(tripler([4, 1, 7]));
+console.log(tripler([5, 6, 7]))
