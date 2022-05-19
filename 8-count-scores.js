@@ -30,8 +30,40 @@ const peeps = [
 ];
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 ***********************************************************************/
-
-
 function countScores(people) {
+  let allTimeScores = {};
 
+    people.forEach(person => {
+      if (person.name in allTimeScores) {
+        let newScoreEntry = person.score + allTimeScores[person.name];
+        let newPersonEntry = { [person.name]: newScoreEntry };
+        Object.assign(allTimeScores, newPersonEntry);
+      }
+      else {
+        let newPersonEntry = { [person.name]: person.score };
+        Object.assign(allTimeScores, newPersonEntry);
+      }
+    })
+    console.log(allTimeScores);
 }
+
+const ppl = [
+  { name: "Pete", score: 10 },
+  { name: "Mike", score: 10 },
+  { name: "Pete", score: -8 },
+  { name: "Dexter", score: 12 }
+];
+
+const countPpl = countScores(ppl);
+// countPpl; //=> { Pete: 2, Mike: 10, Dexter: 12 }
+
+const peeps = [
+  { name: "Pete", score: 2 },
+  { name: "Dexter", score: 2 },
+  { name: "Mike", score: 2 },
+  { name: "Dexter", score: 2 },
+  { name: "Mike", score: 2 },
+  { name: "Pete", score: 2 },
+  { name: "Dexter", score: 2 }
+];
+countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 } 
