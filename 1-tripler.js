@@ -8,13 +8,14 @@ tripler([1,2,3]); // => [ 3, 6, 9 ]
 tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
 
-// TODO:
+// √
 function tripler(array) {
     array.forEach((element, index) => {
         array[index] = element * 3;
         return element;
     });
 }
+
 let arrNums = [1,2,3];
 console.log(arrNums);
 tripler(arrNums);

@@ -12,7 +12,10 @@ isPrime(2017); // => true
 ***************************************************************************/
 
 function isPrime(number) {
-    if (number === 2) {
+    
+    if (number === 1) {
+        return false;
+    } else if (number === 2) {
         return true;
     }
     for (let i = 2; i < number; i++){
@@ -23,5 +26,5 @@ function isPrime(number) {
     return true;
 }
 
-console.log(isPrime(2));
+console.log(isPrime(1));
 
