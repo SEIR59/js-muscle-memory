@@ -5,16 +5,23 @@ those who have an age of 18 or higher.
 
 Example:
 
-const ppl = [
+*/const ppl = [
   {name: 'Khalid Robinson', age: 22},
   {name: 'Ariel Winter', age: 20},
   {name: 'Post Malone', age: 25},
   {name: 'Willow Smith', age: 17}
 ];
 
-adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
-***********************************************************************/
+console.log(adults(ppl)); // => [ 'Khalid Robinson', 'Post Malone' ]
+
 
 function adults(people) {
-  
+  const oldPeople = people.filter(function(person) {
+    if (person.age >= 18) {
+    return true
+   }else {
+     return false;
+   }
+  })
+  return oldPeople;
 }
