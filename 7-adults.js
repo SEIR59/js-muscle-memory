@@ -22,9 +22,9 @@ const ppl = [
   { name: "Willow Smith", age: 17 },
 ];
 
-const adults = function (person) {
+function adults(person) {
   return person.age > 18;
-};
+}
 
 const over18 = ppl.filter(adults);
 console.log(over18);

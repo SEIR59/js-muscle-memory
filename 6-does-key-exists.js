@@ -20,3 +20,4 @@ const obj1 = {
 };
 
 console.log(doesKeyExist(obj1, "course"));
+console.log(doesKeyExist(obj1, "dog"));
