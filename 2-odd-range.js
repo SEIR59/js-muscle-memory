@@ -10,7 +10,7 @@ oddRange(6); // => [ 1, 3, 5 ]
 
 function oddRange(end) {
     const myArr = []
-    for (let i = 0; i < end; i+2){
+    for (let i = 1; i <= end; i = i+2){
         myArr.push(i)
     }
     return myArr

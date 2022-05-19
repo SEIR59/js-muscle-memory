@@ -30,6 +30,15 @@ const peeps = [
 ];
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 ***********************************************************************/
+const peeps = [
+  {name: "Pete", score: 2},
+  {name: "Dexter", score: 2},
+  {name: "Mike", score: 2},
+  {name: "Dexter", score: 2},
+  {name: "Mike", score: 2},
+  {name: "Pete", score: 2},
+  {name: "Dexter", score: 2}
+];
 
 
 function countScores(people) {
@@ -47,3 +56,5 @@ function countScores(people) {
   return o
 }
 // interesting...
+
+console.log(countScores(peeps))
