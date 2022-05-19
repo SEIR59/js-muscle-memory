@@ -17,4 +17,4 @@ function oddRange(end) {
     }
 }
 
-console.log(oddRange([1, 2, 3, 4, 5, 6, 7]))
+console.log(oddRange([1, 2, 3, 4, 5, 6, 7]));
