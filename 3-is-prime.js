@@ -14,10 +14,12 @@ isPrime(2017); // => true
 // function isPrime(number) {
 
 // }
+
+
+
 function test_prime(n)
 {
-
-  if (n===1)
+    if (n===1)
   {
     return false;
   }
@@ -26,7 +28,7 @@ function test_prime(n)
     return true;
   }else
   {
-    for(var x = 2; x < n; x++)
+    for(let x = 2; x < n; x++)
     {
       if(n % x === 0)
       {
@@ -37,4 +39,4 @@ function test_prime(n)
   }
 }
 
-console.log(test_prime(37));
+console.log(test_prime(1));
