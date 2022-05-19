@@ -11,7 +11,7 @@ doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
 function doesKeyExist(obj, key) {
-    return obj[key] ? true :false
+    return obj[key] ? true : false
 }
 const obj1 = {company: 'General Assembly', course: 'Software Engineering Immersive'}
 console.log(doesKeyExist(obj1 , 'Kourse'))
