@@ -11,6 +11,17 @@ const cat2 = catBuilder('Whiskers', 'rainbow', ['poptarts']);
 cat2; // => { name: 'Whiskers', color: 'rainbow', toys: [ 'poptarts' ] }
 ***********************************************************************/
 
-function catBuilder(name, color, toys) {
 
+   
+
+function catBuilder(name, color, toys) {
+    let cat = {
+    name: name,
+    color: color,
+    toys: toys
+    };
+    return cat;
 }
+     console.log(catBuilder("Alita", "blue", ["mouse1", "toy"]))
+
+    
