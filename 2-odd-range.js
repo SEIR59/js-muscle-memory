@@ -9,5 +9,12 @@ oddRange(6); // => [ 1, 3, 5 ]
 ******************************************************************************/
 
 function oddRange(end) {
-
+    let odd = []
+    for(let i = 0; i <= end; i++) {
+        if(i % 2 ===1) {
+            odd.push(i);
+        }
+    }
+    return odd;
 }
+oddRange(13)

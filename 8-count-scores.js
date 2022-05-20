@@ -31,18 +31,22 @@ Example 2
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 
 
-
 function countScores(people) {
-  let obj = []
+  let obj = {}
   for (let i = 0; i < people.length; i++){
 
-    let one = people [i] .name
-  
-    if(object[one]) {
+    let one = people[i].name
+    //let two =(people[i].score)
+    if(obj[one]) {
+      obj[one] += people[i].score
+    }else{
+     one = people[i].name
+     two =people[i].score
+     obj[one]= two
 
     }
-    console.log(one,two)
-    obj [one] = two;
+    console.log(one, two)
+
   }
-  return obj;
-}
+return obj;
+} 
