@@ -17,21 +17,21 @@ isPrime(1693); // => true
 isPrime(15); // => false
 isPrime(303212); // => false
 ***********************************************************************/
-
 function isPrime(number) {
-    If (number === 1)
-    if (number < 2) {
-        return false
-    }
 
-    for (let i = 2; i < number; i ++){
-        if (number % i === 0) {
-            return false
+    for (let i = 2; i < number; i++) {
+        if(number % i === 0) {
+            return false;
         }
     }
-    return true
+    return true;
 }
-  
+
+console.log(isPrime(2));
+console.log(isPrime(1693));
+console.log(isPrime(15));
+console.log(isPrime(303212));
+
 /***********************************************************************
 Using the `isPrime` function you made, write a function `firstNPrimes(n)`
 that returns an array of the first `n` prime numbers.
@@ -44,17 +44,19 @@ firstNPrimes(4); // => [2, 3, 5, 7]
 ***********************************************************************/
 
 function firstNPrimes(n) {
-    let result []
-    let num = 2
-    while(result.length < n) {
-        if (isPrime(num)) {
-            result.push(num)
+
+    const newArr = new Array();
+    for(i = 2; newArr.length < n; i++) {
+        if(isPrime(i)) {
+            newArr.push(i);
         }
     }
-    return result
-
+    return newArr;
 }
 
+console.log(firstNPrimes(0));
+console.log(firstNPrimes(1));
+console.log(firstNPrimes(4));
 /***********************************************************************
  Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
 the sum of the first `n` prime numbers.
@@ -67,10 +69,16 @@ sumOfNPrimes(4); // => 17
 ***********************************************************************/
 
 function sumOfNPrimes(n) {
-let result = 0
-let prime = firstNPrimes(n)
-for (let i = 0; i < prime.length; i++){
-    result = result +prime[i]
+    let sum = 0;
+    let primeNums = firstNPrimes(n);
+    for (let i = 0; i < primeNums.length; i++) {
+        sum += primeNums[i]
+    }
+
+    return sum;
+
 }
-return result
-}
+
+console.log(sumOfNPrimes(0));
+console.log(sumOfNPrimes(1));
+console.log(sumOfNPrimes(4)); 
