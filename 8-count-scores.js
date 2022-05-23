@@ -30,8 +30,41 @@ const peeps = [
 ];
 countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 ***********************************************************************/
+const ppl = [ 
+  {name: "Pete", score: 10},
+  {name: "Mike", score : 10},
+  {name: "Pete", score: -8},
+  {name: "Dexter", score: 12}
+];
 
+const peeps = [
+  {name: "Pete", score: 2},
+  {name: "Dexter", score: 2},
+  {name: "Mike", score: 2},
+  {name: "Dexter", score: 2},
+  {name: "Mike", score: 2},
+  {name: "Pete", score: 2},
+  {name: "Dexter", score: 2}
+];
 
 function countScores(people) {
+// if obj[] === obj[] === return Sum ... set the new obj to [sum]
+let scoresObj = {}; // making an empty array
 
+for (let i = 0; i< people.length;i++) {
+  let personObj = people[i];
+  let name = personObj.name
+  let score = personObj.score // creating a for loop to ...
+
+  if(scoresObj[name]){
+    scoresObj[name] += score;
+  } else {
+    scoresObj[name] = score; //dont comprehend the subject line
+  }
 }
+return scoresObj
+}
+const countPpl = countScores(ppl)
+
+// console.log(peeps);
+console.log(countScores(peeps));
