@@ -19,7 +19,10 @@ function adults(people) {
   let newArr = people.filter((item) =>{
     return item.age >= 18
   })
-  return newArr
+  let newerArr = newArr.map((people)=>{
+    return people.name
+  })
+  return newerArr
 }
 const ppl = [
   {name: 'Khalid Robinson', age: 22},
