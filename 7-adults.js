@@ -4,7 +4,7 @@ objects. The function should return an array containing the names of
 those who have an age of 18 or higher.
 
 Example:
-
+*/
 const ppl = [
   {name: 'Khalid Robinson', age: 22},
   {name: 'Ariel Winter', age: 20},
@@ -12,9 +12,19 @@ const ppl = [
   {name: 'Willow Smith', age: 17}
 ];
 
-adults(ppl); // => [ 'Khalid Robinson', 'Post Malone' ]
-***********************************************************************/
+console.log(adults(ppl)); // => [ 'Khalid Robinson', 'Post Malone' ]
+
+
 
 function adults(people) {
-  
+  const oldPeople = people.filter(person => {
+    if(person.age > 18){
+      return true;
+    } else {
+      return false
+    }
+  })
+  return oldPeople;
 }
+
+

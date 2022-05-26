@@ -19,7 +19,17 @@ isPrime(303212); // => false
 ***********************************************************************/
 
 function isPrime(number) {
-    
+    let prime = true
+    if(number === 1 || number === 0){
+        prime = false
+    } else {
+        for(let i = 2; i < number; i++){
+            if(number % i === 0){
+                prime = false
+            } 
+        }
+    }
+    return prime;
 }
   
 /***********************************************************************
@@ -34,8 +44,16 @@ firstNPrimes(4); // => [2, 3, 5, 7]
 ***********************************************************************/
 
 function firstNPrimes(n) {
-
+    let array = []
+    for(let i = 2; array.length < n; i++){
+        if(isPrime(i)){
+            array.push(i)
+        }
+    }
+    return array
 }
+
+console.log(firstNPrimes(4))
 
 /***********************************************************************
  Using `firstNPrimes`, write a function `sumOfNPrimes(n)` that returns
@@ -50,4 +68,11 @@ sumOfNPrimes(4); // => 17
 
 function sumOfNPrimes(n) {
 
+    const primeList = firstNPrimes(n)
+    const add = function(total, newNum){
+        return total + newNum
+    }
+    let sum = primeList.reduce(add)
+    return sum
 }
+console.log(sumOfNPrimes(4))
