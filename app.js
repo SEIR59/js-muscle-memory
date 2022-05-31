@@ -92,4 +92,4 @@ addExercisesToContainer(exercises); // run the function
 
 // DOM Events
 
-// DOM Manipulation
+// DOM Manipulation 
