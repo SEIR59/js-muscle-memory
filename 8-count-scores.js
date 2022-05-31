@@ -33,5 +33,18 @@ countScores(peeps); //=> { Pete: 4, Mike: 4, Dexter: 6 }
 
 
 function countScores(people) {
-
+  let tracker = {}
+  for (let person of people){
+    let name = person.name
+    name in tracker ? tracker[name]+= person.score : tracker[name] = person.score
+  }
+  return tracker
 }
+
+const ppl = [
+  { name: "Pete", score: 10 },
+  { name: "Mike", score: 10 },
+  { name: "Pete", score: -8 },
+  { name: "Dexter", score: 12 }
+];
+console.log(countScores(ppl))
