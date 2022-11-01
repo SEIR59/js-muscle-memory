@@ -71,6 +71,7 @@ sumOfNPrimes(4); // => 17
 ***********************************************************************/
 
 function sumOfNPrimes(n) {
+  // [2, 3, 5, 7]
   let sum = firstNPrimes(n).reduce((a, b) => a + b);
   return sum;
 }
