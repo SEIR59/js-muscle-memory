@@ -7,7 +7,10 @@ Examples:
 tripler([1,2,3]); // => [ 3, 6, 9 ]
 tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
+numbers = [1, 2, 3];
 
-function tripler(array) {
-  
+function tripler(num) {
+  return num.map((x) => x * 3);
 }
+
+console.log(tripler(numbers));

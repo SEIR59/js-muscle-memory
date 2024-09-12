@@ -9,5 +9,11 @@ oddRange(6); // => [ 1, 3, 5 ]
 ******************************************************************************/
 
 function oddRange(end) {
-
+  let array = [];
+  for (i = 1; i < end; i += 2) {
+    array.push(i);
+  }
+  return array;
 }
+
+console.log(oddRange(6));
